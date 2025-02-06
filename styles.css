@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #FFCCBC; 
+    padding: 20px;
+    color: #2c3e50;
+    height: 100vh;
+}
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar h2 {
+    font-size: 28px;
+    color: #d34d39; 
+}
+.nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+.nav ul li a:hover {
+    background-color: #FFB6A0; 
+    border-radius: 5px;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+}
+.section-header {
+    border-bottom: 2px solid #FFB6A0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #d34d39; 
+}
+
+}
+.account-item {
+    background-color: #FFEBE1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.account-item:hover {
+    background-color: #FFB6A0; 
+}
+.account-item h3 {
+    color: #D07B6E;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.account-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6347;
+}
+.account-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    height: 100%;  
+    max-height: 500px; 
+    overflow-y: auto; 
+}
