@@ -1,12 +1,16 @@
-Successful Case: Nestlé's ERP Implementation
+Successful Case 1: Nestlé's ERP Implementation
 
  b.1. Company Overview 
-Nestlé is one of the world's largest food and beverage companies, operating in over 180 countries with a diverse portfolio of products. 
-Before implementing SAP ERP, Nestlé faced several operational inefficiencies due to its decentralized structure.Each regional division 
-operated independently, leading to inconsistencies in business processes, data management, and supply chain coordination. This lack of
-integration resulted in high operational costs, redundant IT systems, and difficulties in real-time decision-making.
+Nestlé implemented its enterprise system to streamline its global operations and improve overall efficiency. 
+By integrating key business functions like supply chain management, finance, and human resources into a single system, 
+the company was able to standardize processes across its diverse operations worldwide. This unified approach enabled better 
+decision-making through real-time access to data, which is crucial for responding quickly to market shifts. The system helped 
+reduce operational costs by automating manual tasks and optimizing resource management. It also ensured regulatory compliance 
+across various regions and improved customer experiences through faster service and personalized offerings, helping Nestlé 
+maintain its competitive edge in the global market.
 
 b.2. Implementation Process
+
 Nestlé adopted a phased approach to SAP ERP implementation, known as the GLOBE initiative. The key steps in this process included:
 
 Assessment and Planning - Conducting an in-depth analysis of existing business processes and identifying areas for improvement.
@@ -22,6 +26,7 @@ Training and Change Management - Providing employees with extensive training and
 Gradual Deployment - Rolling out the system in stages to minimize business disruptions and allow for adjustments as needed.
 
 b.3. Key success factors
+
 Nestlé's successful ERP implementation can be attributed to several critical factors:
 
 Strong Leadership Commitment - Top executives actively supported and championed the ERP implementation.
@@ -37,6 +42,7 @@ Robust Testing and Quality Assurance - Comprehensive system testing prevented ma
 Continuous Improvement and Monitoring - Nestlé maintained ongoing system evaluations and enhancements post-implementation.
 
  b.4. outcomes & impact
+
 The implementation of SAP ERP at Nestlé led to significant benefits across multiple areas:
 
 Operational Efficiency - Standardized processes and streamlined workflows improved overall efficiency.
@@ -48,3 +54,26 @@ Cost Savings - Reduction in IT maintenance costs and elimination of redundant le
 Improved Supply Chain Management - Enhanced coordination between production, distribution, and sales teams reduced inventory inefficiencies.
 
 Scalability and Business Growth - The ERP system provided a scalable foundation for future growth and digital transformation initiatives.
+
+
+Failure Case 2:  Hershey's ERP Implementation
+
+ c.1. Company Overview 
+Hershey implemented its enterprise system to enhance operational efficiency, improve customer service, and support its global expansion. 
+With a large-scale production and distribution network, Hershey needed a unified system to integrate various business functions, such as 
+manufacturing, inventory management, sales, and finance, ensuring smoother workflows across all departments. The enterprise system allowed 
+the company to standardize processes and provide real-time data, enabling better decision-making and faster responses to market demands. 
+Also, it improved the company’s ability to manage its supply chain effectively, reduce costs, and maintain product quality. By automating 
+several business functions, Hershey also achieved greater consistency in its global operations, enabling the company to stay competitive and
+agile in the dynamic consumer goods industry.
+
+  c.2. implementation process & challenges
+The implementation process of Hershey’s enterprise system involved several stages, including planning, designing, testing, and rollout. 
+Hershey selected an integrated system that could manage its large-scale production, distribution, and sales activities across the globe. 
+The company invested significant resources in training employees, reengineering business processes, and migrating data to the new system. 
+However, the process came with challenges, including resistance from employees who were accustomed to legacy systems, the complexity of 
+integrating diverse systems across departments, and the time constraints for transitioning without disrupting daily operations. 
+The sheer size and scope of Hershey’s operations posed difficulties in ensuring smooth communication and coordination between teams.
+
+  c.3. Key failure factors
+  c.4. outcomes & consequences
