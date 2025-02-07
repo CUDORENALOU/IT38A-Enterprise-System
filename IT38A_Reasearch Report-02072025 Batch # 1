@@ -67,3 +67,38 @@ which further affected its financial performance. However, over time, Hershey wa
 and supply chain operations. The company gained better visibility into its operations, allowing for more informed decision-making. Despite the initial setbacks, 
 the long-term consequence of implementing the enterprise system was improved efficiency, reduced operational costs, and better alignment of business processes, 
 helping Hershey remain competitive in the market.
+
+Comparative Analysis
+
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                  Similarities                                             |                                     Differences                                                      |
+|------------------------------------------------------------------------------------------ |----------------------------------------------------------------------------------------------------- |
+| Both aimed to integrate global operations across supply chain, finance, etc.              | Hershey struggled more with integration complexities. Nestlé adopted a phased approach.              |
+| Both sought to reduce costs and improve efficiency via the enterprise system.             | Hershey's implementation faced delays; Nestlé experienced smoother execution.                        |
+| Both companies faced employee resistance to adopting the new system.                      | Hershey faced significant resistance, while Nestlé managed it better through training.               |
+| Both dealt with the complexity of integrating new systems across departments.             | Hershey underestimated complexity; Nestlé handled it more systematically.                            |
+| Both aimed to improve real-time access to data for better decision-making.                | Both companies aimed for the same data integration goals, but Nestlé had a more seamless experience. |
+| Both implemented an enterprise system, but the approaches differed.                       | Hershey rushed the process and faced delays; Nestlé took a structured approach.                      |
+| Both faced challenges but handled them in different ways.                                 | Hershey had major disruptions, especially during peak times. Nestlé managed to stabilize faster.     |
+| Both used consultants but to varying degrees.                                             | Hershey had limited external consultant collaboration. Nestlé worked closely with consultants.       |
+| Both sought long-term improvements through the enterprise system.                         | Hershey faced delays in achieving efficiency, while Nestlé saw faster and smoother benefits.         |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+
+
+
+
+
+
+| **d.3. Key Takeaways & Lessons Learned**    | **1. What did the successful case do right?**        | **1. What did the successful case do right?**        |
+|                                             | - Focused on realistic expectations and phased rollouts. | - Strong leadership and thorough planning ensured smoother implementation. |
+|                                             | - Proactive employee engagement and training.        | - Clear communication and aligning system goals with business objectives. |
+|                                             | **2. What went wrong in the failed case?**           | **2. What went wrong in the failed case?**           |
+|                                             | - Poor integration of business functions, especially supply chain. | - System errors during migration caused operational disruption. |
+|                                             | - Inadequate change management led to resistance.    | - Underestimated the technical complexity and time needed for full integration. |
+|                                             | **3. How can future implementations avoid similar failures?** | **3. How can future implementations avoid similar failures?** |
+|                                             | - Thorough testing and pilot phases to ensure system readiness. | - Invest more time in data migration, testing, and troubleshooting. |
+|                                             | - More effective stakeholder communication and employee involvement. | - Implement more robust training and support systems. |
+|                                             | - Setting realistic, incremental goals instead of rushing the process. | - Ensure a better fit between the system and business needs during selection. |
+```
+
+This markdown code will create a table with the comparative analysis when rendered.
