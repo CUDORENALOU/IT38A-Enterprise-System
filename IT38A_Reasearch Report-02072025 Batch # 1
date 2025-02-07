@@ -68,8 +68,10 @@ and supply chain operations. The company gained better visibility into its opera
 the long-term consequence of implementing the enterprise system was improved efficiency, reduced operational costs, and better alignment of business processes, 
 helping Hershey remain competitive in the market.
 
+
 Comparative Analysis
 
+ d.1. Similarities & Differences
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |                                  Similarities                                             |                                     Differences                                                      |
 |------------------------------------------------------------------------------------------ |----------------------------------------------------------------------------------------------------- |
@@ -84,21 +86,5 @@ Comparative Analysis
 | Both sought long-term improvements through the enterprise system.                         | Hershey faced delays in achieving efficiency, while Nestlé saw faster and smoother benefits.         |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 
+  d.2. Critical Success vs. Failure Factors
 
-
-
-
-
-| **d.3. Key Takeaways & Lessons Learned**    | **1. What did the successful case do right?**        | **1. What did the successful case do right?**        |
-|                                             | - Focused on realistic expectations and phased rollouts. | - Strong leadership and thorough planning ensured smoother implementation. |
-|                                             | - Proactive employee engagement and training.        | - Clear communication and aligning system goals with business objectives. |
-|                                             | **2. What went wrong in the failed case?**           | **2. What went wrong in the failed case?**           |
-|                                             | - Poor integration of business functions, especially supply chain. | - System errors during migration caused operational disruption. |
-|                                             | - Inadequate change management led to resistance.    | - Underestimated the technical complexity and time needed for full integration. |
-|                                             | **3. How can future implementations avoid similar failures?** | **3. How can future implementations avoid similar failures?** |
-|                                             | - Thorough testing and pilot phases to ensure system readiness. | - Invest more time in data migration, testing, and troubleshooting. |
-|                                             | - More effective stakeholder communication and employee involvement. | - Implement more robust training and support systems. |
-|                                             | - Setting realistic, incremental goals instead of rushing the process. | - Ensure a better fit between the system and business needs during selection. |
-```
-
-This markdown code will create a table with the comparative analysis when rendered.
