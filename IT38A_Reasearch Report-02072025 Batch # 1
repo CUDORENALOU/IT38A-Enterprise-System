@@ -9,7 +9,7 @@ reduce operational costs by automating manual tasks and optimizing resource mana
 across various regions and improved customer experiences through faster service and personalized offerings, helping Nestlé 
 maintain its competitive edge in the global market.
 
-b.2. Implementation Process
+ b.2. Implementation Process
 Nestlé’s enterprise system implementation followed a comprehensive process, starting with careful planning and selection of the right platform. 
 The company sought a solution that could integrate its diverse operations globally, aligning finance, supply chain, procurement, and customer 
 service functions. The implementation process involved detailed process mapping, system design, and testing to ensure the system met Nestlé’s 
@@ -17,7 +17,7 @@ unique business needs. The company also focused heavily on training employees an
 phased rollout approach, starting with pilot programs in select regions and gradually expanding to its global operations. Despite the complexity,
 Nestlé dedicated significant resources to ensure the system was implemented smoothly without major disruptions to day-to-day operations.
 
-b.3. Key success factors
+ b.3. Key success factors
 Several factors contributed to the success of Nestlé’s enterprise system implementation. One of the key success factors was strong leadership and 
 clear communication across all levels of the organization, which helped manage the change effectively. Nestlé ensured that employees were properly
 trained and had the necessary support to transition smoothly to the new system. Another critical factor was the careful selection of the right enterprise 
@@ -45,7 +45,7 @@ Also, it improved the company’s ability to manage its supply chain effectively
 several business functions, Hershey also achieved greater consistency in its global operations, enabling the company to stay competitive and
 agile in the dynamic consumer goods industry.
 
-  c.2. implementation process & challenges
+ c.2. implementation process & challenges
 The implementation process of Hershey’s enterprise system involved several stages, including planning, designing, testing, and rollout. 
 Hershey selected an integrated system that could manage its large-scale production, distribution, and sales activities across the globe. 
 The company invested significant resources in training employees, reengineering business processes, and migrating data to the new system. 
@@ -97,6 +97,18 @@ Comparative Analysis
 | they prioritized employee engagement by maintaining proactive communication and involving staff         | Lastly, clear communication across the organization ensured that everyone understood and adapted to the              |
 | throughout the transition.                                                                              | changes efficiently.                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                 Hershey’s Failure Factors                                              |                                     Nestlé Critical Success                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hershey’s failure was due to their underestimation of system complexity, which led to rushed           | Nestlé’s challenges included system errors and delays in data migration, which disrupted operations during the        |
+| implementation and operational issues in production and supply chain. They also faced poor integration | the transition phase. There was also some misalignment between the system’s capabilities and business needs,          |
+| of the new system with existing infrastructure, exacerbating operational challenges. Lack of proper    | causing inefficiencies in the early stages. Data migration issues led to further disruption, especially in            |
+| change management and insufficient attention to employee resistance resulted in further disruptions.   | real-time data processing. Nestlé underestimated the complexity of the transition, resulting in a longer              |
+| Unrealistic expectations were set regarding the timeline and efficiency of the new system,             | stabilization period than initially anticipated. There were early operational disruptions due to system               |
+| leading to setbacks. Also, inadequate training for employees hindered their ability to adapt to        | errors that affected processes before full stabilization was achieved.                                                |
+| the new system, contributing to inefficiencies and resistance.                                         |                                                                                                                       |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 d.3. Key Takeaways & Lessons Learned 
 
