@@ -10,51 +10,29 @@ across various regions and improved customer experiences through faster service 
 maintain its competitive edge in the global market.
 
 b.2. Implementation Process
-
-Nestlé adopted a phased approach to SAP ERP implementation, known as the GLOBE initiative. The key steps in this process included:
-
-Assessment and Planning - Conducting an in-depth analysis of existing business processes and identifying areas for improvement.
-
-Stakeholder Engagement - Involving executives, IT teams, and employees early in the process to ensure buy-in and smooth adoption.
-
-System Customization and Configuration - Adapting SAP ERP to fit Nestlé's specific business requirements while maintaining core standardization goals.
-
-Testing and Pilot Runs - Conducting rigorous system testing and piloting ERP deployment in select locations before full-scale rollout.
-
-Training and Change Management - Providing employees with extensive training and support to facilitate system transition.
-
-Gradual Deployment - Rolling out the system in stages to minimize business disruptions and allow for adjustments as needed.
+Nestlé’s enterprise system implementation followed a comprehensive process, starting with careful planning and selection of the right platform. 
+The company sought a solution that could integrate its diverse operations globally, aligning finance, supply chain, procurement, and customer 
+service functions. The implementation process involved detailed process mapping, system design, and testing to ensure the system met Nestlé’s 
+unique business needs. The company also focused heavily on training employees and aligning their workflows to the new system. Nestlé adopted a 
+phased rollout approach, starting with pilot programs in select regions and gradually expanding to its global operations. Despite the complexity,
+Nestlé dedicated significant resources to ensure the system was implemented smoothly without major disruptions to day-to-day operations.
 
 b.3. Key success factors
-
-Nestlé's successful ERP implementation can be attributed to several critical factors:
-
-Strong Leadership Commitment - Top executives actively supported and championed the ERP implementation.
-
-Phased Implementation Approach - Deploying the system gradually minimized risks and allowed for continuous improvements.
-
-Effective Change Management - Employee training programs and clear communication strategies helped reduce resistance to change.
-
-Cross-Functional Collaboration - Close coordination between IT, business units, and supply chain teams ensured seamless integration.
-
-Robust Testing and Quality Assurance - Comprehensive system testing prevented major operational failures.
-
-Continuous Improvement and Monitoring - Nestlé maintained ongoing system evaluations and enhancements post-implementation.
+Several factors contributed to the success of Nestlé’s enterprise system implementation. One of the key success factors was strong leadership and 
+clear communication across all levels of the organization, which helped manage the change effectively. Nestlé ensured that employees were properly
+trained and had the necessary support to transition smoothly to the new system. Another critical factor was the careful selection of the right enterprise 
+platform that could scale with the company’s global operations while integrating well with existing systems. Nestlé also maintained a focus on continuous 
+improvement, constantly evaluating the system’s performance and making necessary adjustments. Collaboration with external consultants and technology 
+partners who brought expertise to the implementation process further ensured that the system met the company’s objectives.
 
  b.4. outcomes & impact
-
-The implementation of SAP ERP at Nestlé led to significant benefits across multiple areas:
-
-Operational Efficiency - Standardized processes and streamlined workflows improved overall efficiency.
-
-Enhanced Data Visibility - Real-time access to financial, supply chain, and operational data enabled better decision-making.
-
-Cost Savings - Reduction in IT maintenance costs and elimination of redundant legacy systems.
-
-Improved Supply Chain Management - Enhanced coordination between production, distribution, and sales teams reduced inventory inefficiencies.
-
-Scalability and Business Growth - The ERP system provided a scalable foundation for future growth and digital transformation initiatives.
-
+The implementation of the enterprise system at Nestlé led to significant positive outcomes. The company gained greater operational efficiency, 
+with improved data visibility and real-time insights into business performance, which facilitated better decision-making. The integration of 
+various functions streamlined supply chain management, improved inventory control, and enhanced customer service. Financial processes became more 
+standardized, reducing errors and improving compliance across regions. Additionally, the enterprise system enabled Nestlé to scale its operations 
+more effectively as the company continued to grow globally. The long-term impact was improved profitability, reduced operational costs, and a stronger 
+competitive position in the market. Ultimately, the successful implementation helped Nestlé achieve better coordination across its global network, 
+making it more agile in responding to market demands.
 
 Failure Case 2:  Hershey's ERP Implementation
 
@@ -76,4 +54,16 @@ integrating diverse systems across departments, and the time constraints for tra
 The sheer size and scope of Hershey’s operations posed difficulties in ensuring smooth communication and coordination between teams.
 
   c.3. Key failure factors
+Several factors contributed to Hershey’s struggles during the enterprise system implementation. One major issue was underestimating the 
+complexity of the integration process. Hershey faced difficulties with aligning its supply chain and inventory management with the new system, 
+which led to significant operational disruptions. The company also experienced delays in data migration and testing, resulting in errors in the 
+production and delivery schedules. Moreover, there was a lack of effective change management, which caused resistance among employees who struggled 
+to adapt to the new system. This combination of technical and human factors led to delays in achieving the full benefits of the system.
+
   c.4. outcomes & consequences
+The outcomes of Hershey’s enterprise system implementation were mixed. In the short term, the company faced significant operational setbacks, 
+including delays in delivering products to customers, which impacted sales during peak seasons. The company also incurred costs related to system errors, 
+which further affected its financial performance. However, over time, Hershey was able to resolve many of the issues, improving its inventory management 
+and supply chain operations. The company gained better visibility into its operations, allowing for more informed decision-making. Despite the initial setbacks, 
+the long-term consequence of implementing the enterprise system was improved efficiency, reduced operational costs, and better alignment of business processes, 
+helping Hershey remain competitive in the market.
