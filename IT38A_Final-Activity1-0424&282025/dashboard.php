@@ -40,6 +40,46 @@
     </div>
 </div>
 
+<div class="recent-orders">
+        <h2>Recent Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#2571</td>
+                    <td>Loren</td>
+                    <td>Mar. 10</td>
+                    <td>$142.00</td>
+                </tr>
+                <tr>
+                    <td>#3584</td>
+                    <td>Maricar</td>
+                    <td>Jan. 28</td>
+                    <td>$232.00</td>
+                </tr>
+                <tr>
+                    <td>#3659</td>
+                    <td>Vevien</td>
+                    <td>June. 23</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>#5215</td>
+                    <td>Mariel</td>
+                    <td>Feb. 30</td>
+                    <td>$320.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>
