@@ -21,5 +21,25 @@
     <a href="#">Log Out</a>
 </div>
 
+<div class="main-content">
+    <h1>Welcome, Admin!</h1>
+    
+    <div class="cards">
+        <div class="card">
+            <h3>Total Products</h3>
+            <p>1,250</p>
+        </div>
+        <div class="card">
+            <h3>Total Orders</h3>
+            <p>150</p>
+        </div>
+        <div class="card">
+            <h3>Active Users</h3>
+            <p>50</p>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
