@@ -97,7 +97,7 @@
             <tr>
                 <td>
                     <div style="display: flex; align-items: center; gap: 20px;">
-                        <div class="product-img"><img src="images/wrench.png" alt=""></div>
+                        <div class="product-img"><img src="imgs/stanley.png" alt=""></div>
                         <strong>Stanley Adjustable Wrench Set</strong>
                     </div>
                 </td>
@@ -107,7 +107,7 @@
             <tr>
                 <td>
                     <div style="display: flex; align-items: center; gap: 20px;">
-                        <div class="product-img"><img src="images/drill.png" alt=""></div>
+                        <div class="product-img"><img src="imgs/black.png" alt=""></div>
                         <strong>Black & Decker Electric Drill</strong>
                     </div>
                 </td>
@@ -117,7 +117,7 @@
             <tr>
                 <td>
                     <div style="display: flex; align-items: center; gap: 20px;">
-                        <div class="product-img"><img src="images/hammer.png" alt=""></div>
+                        <div class="product-img"><img src="imgs/castle.png" alt=""></div>
                         <strong>Castile Claw Hammer</strong>
                     </div>
                 </td>
@@ -127,7 +127,7 @@
             <tr>
                 <td>
                     <div style="display: flex; align-items: center; gap: 20px;">
-                        <div class="product-img"><img src="images/handsaw.png" alt=""></div>
+                        <div class="product-img"><img src="imgs/hanpex.png" alt=""></div>
                         <strong>Hanpex Handsaw</strong>
                     </div>
                 </td>
