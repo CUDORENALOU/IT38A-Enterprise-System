@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Manage Products - HardwareHub</title>
-    <link rel="stylesheet" href="style.css"> <!-- Keep using your CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Keep using your CSS -->
     <style>
         body {
             margin: 0;
