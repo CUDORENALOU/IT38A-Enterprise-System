@@ -3,78 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Manage Products - HardwareHub</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Keep using your CSS -->
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #edf1f5, #dbe4ee);
-        }
-        .main-content {
-            margin-left: 250px;
-            padding: 40px;
-        }
-        .buttons {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .buttons button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .buttons button:first-child {
-            background-color: #1a73e8;
-            color: white;
-        }
-        .buttons button:last-child {
-            background-color: #ccc;
-        }
-        .product-list {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .product-list th, .product-list td {
-            padding: 15px;
-            text-align: left;
-            font-size: 16px;
-        }
-        .product-img {
-            width: 70px;
-            height: 70px;
-            border-radius: 10px;
-            background-color: #eaeaea;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .product-img img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-    </style>
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css"> 
+   
 <div class="sidebar">
     <div class="logo">
-        <img src="logo.jpg" alt="HardwareHub Logo">
+        <img src="final-logo.png" alt="HardwareHub Logo">
     </div>
     <h2>HardwareHub</h2>
     <a href="dashboard.php">Dashboard</a>
-    <a href="http://localhost/IT38A-Enterprise-System/IT38A_Final-Activity1-0424&282025/manage_products.php">Manage Products</a>
+    <a href="manage_products.php">Manage Products</a>
     <a href="#">Orders</a>
     <a href="#">Users</a>
     <a href="#">Reports</a>
     <a href="#">Settings</a>
-    <a href="#">Log Out</a>
+    <a href="logout.php">Log Out</a>
 </div>
 
 <div class="main-content">

@@ -203,12 +203,7 @@ tr:hover {
     color: white;
     width: 100%;
     max-width: 500px;
-}
-
-.login-box .logo {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .login-box h2 {
@@ -220,6 +215,8 @@ tr:hover {
 .input-group {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .input-group i {
@@ -236,6 +233,7 @@ tr:hover {
     border-radius: 10px;
     background-color: #e0e0e0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .login-btn {
@@ -293,4 +291,39 @@ tr:hover {
     color: white;
     width: 100%;
     max-width: 500px;
+    box-sizing: border-box;
 }
+
+/* ==== NEW: LOGO WITH TEXT ==== */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper .logo {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper .logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.logo-wrapper .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+

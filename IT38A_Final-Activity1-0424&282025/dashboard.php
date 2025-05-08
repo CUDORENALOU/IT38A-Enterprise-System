@@ -13,7 +13,7 @@
 
 <div class="sidebar">
     <div class="logo">
-        <img src="logo.jpg" alt="HardwareHub Logo">
+        <img src="final-logo.png" alt="HardwareHub Logo">
     </div>
     <h2>HardwareHub</h2>
     <a href="#">Dashboard</a>
