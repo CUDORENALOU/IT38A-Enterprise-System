@@ -16,13 +16,13 @@
         <img src="final-logo.png" alt="HardwareHub Logo">
     </div>
     <h2>HardwareHub</h2>
-    <a href="#">Dashboard</a>
-    <a href="http://localhost/IT38A-Enterprise-System/IT38A_Final-Activity1-0424&282025/manage_products.php">Manage Products</a>
-    <a href="#">Orders</a>
-    <a href="#">Users</a>
+    <a href="dashboard.php">Dashboard</a>
+    <a href="manage_products.php">Manage Products</a>
+    <a href="orders.php">Orders</a>
+    <a href="users.php">Users</a>
     <a href="#">Reports</a>
     <a href="#">Settings</a>
-    <a href="#">Log Out</a>
+    <a href="logout.php">Log Out</a>
 </div>
 
 <div class="main-content">
