@@ -25,16 +25,6 @@
 <div class="main-content">
     <h1>User Management</h1>
     
-    <div class="user-actions">
-        <div class="user-filters">
-            <select id="roleFilter" class="filter-select">
-                <option value="all">All Roles</option>
-                <option value="admin">Admin</option>
-                <option value="user">User</option>
-            </select>
-        </div>
-    </div>
-
     <!-- Add User Form -->
     <div id="addUserForm" class="form-container" style="display: none;">
         <h2>Add New User</h2>

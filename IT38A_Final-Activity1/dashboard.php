@@ -1,3 +1,14 @@
+<?php
+include('db.php');
+// Total products (sum of all stocks)
+$total_products = $conn->query("SELECT SUM(stocks) FROM products")->fetch_row()[0];
+// Total orders
+$total_orders = $conn->query("SELECT COUNT(*) FROM orders")->fetch_row()[0];
+// Active users (all users with role 'admin' or 'customer')
+$active_users = $conn->query("SELECT COUNT(*) FROM users WHERE role IN ('admin','customer')")->fetch_row()[0];
+// Recent orders (last 4)
+$recent_orders = $conn->query("SELECT o.id, u.email, o.order_date, o.total_price FROM orders o JOIN users u ON o.user_id = u.id ORDER BY o.order_date DESC LIMIT 4");
+?>
 <!-- dashboard.php -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,15 +42,15 @@
     <div class="cards">
         <div class="card">
             <h3><i class="fas fa-box"></i> Total Products</h3>
-            <p>1,250</p>
+            <p><?= $total_products ?></p>
         </div>
         <div class="card">
             <h3><i class="fas fa-shopping-cart"></i> Total Orders</h3>
-            <p>150</p>
+            <p><?= $total_orders ?></p>
         </div>
         <div class="card">
             <h3><i class="fas fa-users"></i> Active Users</h3>
-            <p>50</p>
+            <p><?= $active_users ?></p>
         </div>
     </div>
 
@@ -55,30 +66,14 @@
                 </tr>
             </thead>
             <tbody>
+                <?php while($row = $recent_orders->fetch_assoc()): ?>
                 <tr>
-                    <td>#2571</td>
-                    <td>Loren</td>
-                    <td>Mar. 10</td>
-                    <td>$142.00</td>
+                    <td>#<?= $row['id'] ?></td>
+                    <td><?= htmlspecialchars($row['email']) ?></td>
+                    <td><?= date('M. d', strtotime($row['order_date'])) ?></td>
+                    <td>$<?= number_format($row['total_price'], 2) ?></td>
                 </tr>
-                <tr>
-                    <td>#3584</td>
-                    <td>Maricar</td>
-                    <td>Jan. 28</td>
-                    <td>$232.00</td>
-                </tr>
-                <tr>
-                    <td>#3659</td>
-                    <td>Vevien</td>
-                    <td>June. 23</td>
-                    <td>$400.00</td>
-                </tr>
-                <tr>
-                    <td>#5215</td>
-                    <td>Mariel</td>
-                    <td>Feb. 30</td>
-                    <td>$320.00</td>
-                </tr>
+                <?php endwhile; ?>
             </tbody>
         </table>
     </div>

@@ -17,6 +17,7 @@ if (!$conn) {
 // Handle Add Product
 if (isset($_POST['add_product'])) {
     $product_name = $_POST['product_name'];
+    $description = $_POST['description'];
     $price = $_POST['price'];
     $stock = $_POST['stock'];
     $image = $_FILES['product_image']['name'];
@@ -26,7 +27,7 @@ if (isset($_POST['add_product'])) {
     $target_file = $target_dir . basename($_FILES["product_image"]["name"]);
     move_uploaded_file($_FILES["product_image"]["tmp_name"], $target_file);
     
-    $sql = "INSERT INTO products (product_name, price, stocks, image) VALUES ('$product_name', '$price', '$stock', '$image')";
+    $sql = "INSERT INTO products (product_name, description, price, stocks, image) VALUES ('$product_name', '$description', '$price', '$stock', '$image')";
     mysqli_query($conn, $sql);
 }
 
@@ -65,6 +66,7 @@ if (isset($_POST['remove_product'])) {
         <h2>Add New Product</h2>
         <form method="POST" enctype="multipart/form-data">
             <input type="text" name="product_name" placeholder="Product Name" required>
+            <textarea name="description" placeholder="Description" rows="3" style="width:100%;padding:10px 12px;margin-bottom:12px;border:1px solid #ddd;border-radius:8px;font-size:1rem;background:#F2F4F7;"></textarea>
             <input type="number" name="price" placeholder="Price" step="0.01" required>
             <input type="number" name="stock" placeholder="Stock" required>
             <input type="file" name="product_image" required>

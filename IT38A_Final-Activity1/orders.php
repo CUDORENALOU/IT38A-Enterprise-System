@@ -49,25 +49,23 @@
             </thead>
             <tbody>
                 <?php
-                // Database connection
                 include('db.php');
 
-                // Fetch orders from database
-                $sql = "SELECT * FROM orders ORDER BY order_date DESC";
+                // Fetch all orders with user email
+                $sql = "SELECT o.*, u.email FROM orders o JOIN users u ON o.user_id = u.id ORDER BY o.order_date DESC";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
+                    while($order = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>#" . $row['order_id'] . "</td>";
-                        echo "<td>" . $row['customer_name'] . "</td>";
-                        echo "<td>" . date('M. d', strtotime($row['order_date'])) . "</td>";
-                        echo "<td>$" . number_format($row['amount'], 2) . "</td>";
-                        echo "<td><span class='status-badge " . strtolower($row['status']) . "'>" . $row['status'] . "</span></td>";
+                        echo "<td>#{$order['id']}</td>";
+                        echo "<td>" . htmlspecialchars($order['email']) . "</td>";
+                        echo "<td>" . date('M. d', strtotime($order['order_date'])) . "</td>";
+                        echo "<td>$" . number_format($order['total_price'], 2) . "</td>";
+                        echo "<td><span class='status-badge " . strtolower($order['status']) . "'>{$order['status']}</span></td>";
                         echo "<td>
-                                <button class='action-btn view-btn' onclick='viewOrder(" . $row['order_id'] . ")'><i class='fas fa-eye'></i></button>
-                                <button class='action-btn edit-btn' onclick='editOrder(" . $row['order_id'] . ")'><i class='fas fa-edit'></i></button>
-                                <button class='action-btn delete-btn' onclick='deleteOrder(" . $row['order_id'] . ")'><i class='fas fa-trash'></i></button>
+                                <button class='action-btn edit-btn' onclick='editOrder({$order['id']})'><i class='fas fa-edit'></i></button>
+                                <button class='action-btn delete-btn' onclick='deleteOrder({$order['id']})'><i class='fas fa-trash'></i></button>
                               </td>";
                         echo "</tr>";
                     }
@@ -82,18 +80,15 @@
 
 <script>
 function viewOrder(orderId) {
-    // Implement view order details
     window.location.href = 'view_order.php?id=' + orderId;
 }
 
 function editOrder(orderId) {
-    // Implement edit order
     window.location.href = 'edit_order.php?id=' + orderId;
 }
 
 function deleteOrder(orderId) {
     if(confirm('Are you sure you want to delete this order?')) {
-        // Implement delete order
         window.location.href = 'delete_order.php?id=' + orderId;
     }
 }

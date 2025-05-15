@@ -17,12 +17,40 @@ $subtotal = array_reduce($_SESSION['cart'], function($total, $item) {
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Store order details in session
+    include('db.php');
+    // Get customer info from form
+    $name = $_POST['name'];
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
+    $payment_method = $_POST['payment'];
+    $status = 'pending';
+    $total_price = $subtotal;
+
+    // Insert order into orders table
+    $user_id = 4; // Use a valid user id from your users table for now
+    $stmt = $conn->prepare("INSERT INTO orders (user_id, total_price, status, order_date) VALUES (?, ?, ?, NOW())");
+    $stmt->bind_param("ids", $user_id, $total_price, $status);
+    $stmt->execute();
+    $order_id = $conn->insert_id;
+
+    // Insert each product into order_items
+    foreach ($_SESSION['cart'] as $item) {
+        $product_id = isset($item['product_id']) ? $item['product_id'] : 0;
+        $product_name = $item['name'];
+        $product_image = $item['image'];
+        $quantity = $item['quantity'];
+        $price = $item['price'];
+        $stmt2 = $conn->prepare("INSERT INTO order_items (order_id, product_id, product_name, product_image, quantity, price) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt2->bind_param("iissid", $order_id, $product_id, $product_name, $product_image, $quantity, $price);
+        $stmt2->execute();
+    }
+
+    // Store order details in session (optional, for confirmation page)
     $_SESSION['order_details'] = [
-        'name' => $_POST['name'],
-        'address' => $_POST['address'],
-        'phone' => $_POST['phone'],
-        'payment_method' => $_POST['payment'],
+        'name' => $name,
+        'address' => $address,
+        'phone' => $phone,
+        'payment_method' => $payment_method,
         'items' => $_SESSION['cart'],
         'total' => $subtotal,
         'order_number' => 'ORD-' . strtoupper(uniqid())
