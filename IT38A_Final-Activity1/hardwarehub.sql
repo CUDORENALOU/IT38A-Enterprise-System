@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2025 at 08:06 PM
+-- Generation Time: May 16, 2025 at 01:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `product_name`, `quantity`, `total_price`, `order_date`, `status`) VALUES
-(2, 4, '', 0, 1268.00, '2025-05-15 16:04:30', 'processing');
+(2, 4, '', 0, 1268.00, '2025-05-15 16:04:30', 'completed');
 
 -- --------------------------------------------------------
 
@@ -117,10 +117,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `role`, `created_at`) VALUES
-(1, 'suarezrenalou@gmail.com', '$2y$10$EIoBxxIYBq6x3cPbvsVsfO3r/X7HbWr87X9Lx52MTp1FmxpmkuqCO', 'admin', '2025-05-15 14:30:13'),
-(2, 'jhasen22@gmail.com', '$2y$10$Ro8gLdTsCSrF5q9fA4Qa8ehQ/6OYdKLjk1o3S3DzSvHrujKSlBvDy', 'admin', '2025-05-15 14:30:13'),
-(3, 'rena@cudo', '$2y$10$hVY1Bw1jLSFN8GLuCsyZW.iAhPcwE3xc2j3WqxexL/0e78Qc5FdfS', 'customer', '2025-05-15 14:42:45'),
-(4, 'maloy@cudo', '$2y$10$rV1B8jJnUsGnZbAkC9F3fOpVTHN.D.seCLP8zy5jJR6yt93KO4XWG', 'customer', '2025-05-15 14:49:54');
+(4, 'maloy@cudo', '$2y$10$rV1B8jJnUsGnZbAkC9F3fOpVTHN.D.seCLP8zy5jJR6yt93KO4XWG', 'customer', '2025-05-15 14:49:54'),
+(11, 'suarezrenalou@gmail.com', '$2y$10$Nm3iFcd9LO90qBMcm4yo0OD1DcdxIXql6B3Z8ESydN8N39UqMZARW', 'admin', '2025-05-15 23:24:19'),
+(12, 'jhasen22@gmail.com', '$2y$10$SMbZLDrC0KDUjTARwA2UwOjx9bYf8ZnobAIgrcdUvNw6K6I7.5Bjq', 'admin', '2025-05-15 23:24:19'),
+(13, 'rena@cudo', '$2y$10$TpICjBmjEvhTbjCn/d.Pb.d1ggf964qA/N8v4eENEABRc/sRWh51y', 'customer', '2025-05-15 23:32:55');
 
 --
 -- Indexes for dumped tables
@@ -179,7 +179,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
