@@ -2,7 +2,7 @@
 $conn = new mysqli("localhost", "root", "", "hardwarehub");
 
 if (isset($_POST['delete_id'])) {
-    $stmt = $conn->prepare("DELETE FROM products WHERE id = ?");
+    $stmt = $conn->prepare("DELETE FROM products WHERE product_id = ?");
     $stmt->bind_param("i", $_POST['delete_id']);
     $stmt->execute();
     header("Location: manage_products.php");
@@ -30,7 +30,7 @@ $result = $conn->query("SELECT * FROM products");
         <label>Select a product to delete:</label><br>
         <select name="delete_id" required>
             <?php while ($row = $result->fetch_assoc()): ?>
-                <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
+                <option value="<?= $row['product_id'] ?>"><?= $row['product_name'] ?></option>
             <?php endwhile; ?>
         </select><br><br>
         <button type="submit">Delete Product</button>

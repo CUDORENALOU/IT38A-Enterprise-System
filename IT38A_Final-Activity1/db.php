@@ -1,13 +1,14 @@
 <?php
-$servername = "localhost"; // Your DB server
-$username = "root";        // Your DB username
-$password = "";            // Your DB password
-$dbname = "hardware"; // Your DB name
+// Correctly define database connection variables
+$host = "localhost";
+$username = "root";
+$password = ""; // leave empty if using XAMPP default
+$database = "hardwarehub";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Create the database connection
+$conn = new mysqli($host, $username, $password, $database);
 
-// Check connection
+// Check for connection error
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

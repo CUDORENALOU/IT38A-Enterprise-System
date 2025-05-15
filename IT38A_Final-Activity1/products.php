@@ -18,19 +18,35 @@
                 <ul class="nav-links">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="products.php" class="active">Products</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="about us.php">About us</a></li>
+                    <li><a href="contact.php">Contacts</a></li>
+                    <?php
+                    session_start();
+                    $cart_count = 0;
+                    if (isset($_SESSION['cart'])) {
+                        foreach ($_SESSION['cart'] as $item) {
+                            $cart_count += $item['quantity'];
+                        }
+                    }
+                    ?>
+                    <li style="position:relative;">
+                        <a href="cart.php" style="position:relative;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="cart-count-badge" style="position:absolute;top:-8px;right:-10px;background:#FF8800;color:#fff;border-radius:50%;padding:2px 7px;font-size:0.8rem;font-weight:bold;<?php echo ($cart_count > 0 ? '' : 'display:none;'); ?>"><?php echo $cart_count; ?></span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="products-section">
-        <div class="container">
-            <input type="text" class="search-bar" placeholder="Search for hand tools materials...">
+    <div class="search-bar-wrapper">
+    
+</div>
             
             <div class="products-list">
+
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-img-bg">
@@ -40,7 +56,10 @@
                     <div class="product-desc-wrap">
                         <div class="product-desc">
                             <span class="desc-label">Description:</span>
-                            A high-quality set of adjustable wrenches designed for durability and precision. Provide a strong grip and easy adjustment for various bolt sizes.
+                            This high-quality set of adjustable wrenches is built for durability and precision. 
+                            Each wrench offers a strong grip, ensuring secure handling during use.
+                            It has easy adjustment feature fit for a wide range of bolt sizes with ease.
+
                         </div>
                     </div>
                     <div class="star-spacer"></div>
@@ -54,7 +73,9 @@
                     <div class="product-bottom">
                         <div class="product-price-cart">
                             <span class="product-price">$142</span>
+                            <button type="button" class="add-to-cart-btn" data-name="Stanley Adjustable Wrench Set" data-price="142" data-image="imgs/stanley.png" style="background:none;border:none;padding:0;">
                             <i class="fa fa-shopping-cart cart-icon"></i>
+                            </button>
                         </div>
                         <button class="buy-btn">Buy now!</button>
                     </div>
@@ -83,7 +104,9 @@
                     <div class="product-bottom">
                         <div class="product-price-cart">
                             <span class="product-price">$242</span>
+                            <button type="button" class="add-to-cart-btn" data-name="Castile Claw Hammer" data-price="242" data-image="imgs/castle.png" style="background:none;border:none;padding:0;">
                             <i class="fa fa-shopping-cart cart-icon"></i>
+                            </button>
                         </div>
                         <button class="buy-btn">Buy now!</button>
                     </div>
@@ -112,7 +135,9 @@
                     <div class="product-bottom">
                         <div class="product-price-cart">
                             <span class="product-price">$542</span>
+                            <button type="button" class="add-to-cart-btn" data-name="Black & Decker Electric Drill" data-price="542" data-image="imgs/black.png" style="background:none;border:none;padding:0;">
                             <i class="fa fa-shopping-cart cart-icon"></i>
+                            </button>
                         </div>
                         <button class="buy-btn">Buy now!</button>
                     </div>
@@ -141,7 +166,9 @@
                     <div class="product-bottom">
                         <div class="product-price-cart">
                             <span class="product-price">$342</span>
+                            <button type="button" class="add-to-cart-btn" data-name="Hanpex Handsaw" data-price="342" data-image="imgs/hanpex.png" style="background:none;border:none;padding:0;">
                             <i class="fa fa-shopping-cart cart-icon"></i>
+                            </button>
                         </div>
                         <button class="buy-btn">Buy now!</button>
                     </div>
@@ -149,5 +176,28 @@
             </div>
         </div>
     </section>
+    <script>
+    document.querySelectorAll('.add-to-cart-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var formData = new FormData();
+            formData.append('name', btn.getAttribute('data-name'));
+            formData.append('price', btn.getAttribute('data-price'));
+            formData.append('image', btn.getAttribute('data-image'));
+
+            fetch('ajax_add_to_cart.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                let badge = document.getElementById('cart-count-badge');
+                if (badge) {
+                    badge.textContent = data.cart_count;
+                    badge.style.display = data.cart_count > 0 ? 'inline-block' : 'none';
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>

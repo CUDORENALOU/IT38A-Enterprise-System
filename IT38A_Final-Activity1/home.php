@@ -16,10 +16,10 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="home.php" class="active">Home</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="about us.php">About us</a></li>
+                    <li><a href="contact.php">Contacts</a></li>
                 </ul>
             </nav>
         </div>

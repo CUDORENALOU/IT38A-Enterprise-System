@@ -1,6 +1,9 @@
 <?php
+session_start();
 // Include database connection
 include('db.php');
+
+$error_message = '';
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -8,25 +11,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Check if passwords match
     if ($password != $confirm_password) {
-        echo "Passwords do not match!";
+        $error_message = "Passwords do not match!";
     } else {
-        // Hash password for security
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-        // Prepare SQL to insert user into database
-        $sql = "INSERT INTO users (email, password) VALUES ('$email', '$hashed_password')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "Registration successful!";
-            header('Location: index.php');  // Redirect to login page after successful registration
+        // Check if email already exists
+        $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            $error_message = "Email already registered!";
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+            $role = 'customer';
+            $stmt = $conn->prepare("INSERT INTO users (email, password, role) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $email, $hashed_password, $role);
+            if ($stmt->execute()) {
+                header('Location: login.php?registered=success');
+                exit();
+            } else {
+                $error_message = "Registration failed. Please try again.";
+            }
         }
+        $stmt->close();
     }
 }
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +58,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <h2>Register</h2>
 
+    <!-- Registration Error Message -->
+    <?php if (!empty($error_message)): ?>
+        <div class="error-message"><?php echo $error_message; ?></div>
+    <?php endif; ?>
+
     <!-- Registration Form -->
     <form method="POST" action="register.php">
         <div class="input-group">
@@ -67,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
 
     <div class="links">
-      <a href="index.php">Already have an account?</a>
+      <a href="login.php">Already have an account?</a>
     </div>
   </div>
 </div>

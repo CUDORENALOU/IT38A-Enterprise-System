@@ -26,14 +26,14 @@ if (isset($_POST['add_product'])) {
     $target_file = $target_dir . basename($_FILES["product_image"]["name"]);
     move_uploaded_file($_FILES["product_image"]["tmp_name"], $target_file);
     
-    $sql = "INSERT INTO products (product_name, price, stock, image) VALUES ('$product_name', '$price', '$stock', '$image')";
+    $sql = "INSERT INTO products (product_name, price, stocks, image) VALUES ('$product_name', '$price', '$stock', '$image')";
     mysqli_query($conn, $sql);
 }
 
 // Handle Remove Product
 if (isset($_POST['remove_product'])) {
     $product_id = $_POST['product_id'];
-    $sql = "DELETE FROM products WHERE id = '$product_id'";
+    $sql = "DELETE FROM products WHERE product_id = '$product_id'";
     mysqli_query($conn, $sql);
 }
 ?>
@@ -84,7 +84,7 @@ if (isset($_POST['remove_product'])) {
                 $products_result = mysqli_query($conn, $products_query);
                 if (mysqli_num_rows($products_result) > 0) {
                     while($row = mysqli_fetch_assoc($products_result)) {
-                        echo "<option value='".$row['id']."'>".htmlspecialchars($row['product_name'])." - $".number_format($row['price'],2)." (Stock: ".htmlspecialchars($row['stock']).")</option>";
+                        echo "<option value='".$row['product_id']."'>".htmlspecialchars($row['product_name'])." - $".number_format($row['price'],2)." (Stock: ".htmlspecialchars($row['stock']).")</option>";
                     }
                 } else {
                     echo "<option value='' disabled>No products available</option>";
@@ -101,7 +101,7 @@ if (isset($_POST['remove_product'])) {
             <tr>
                 <th>Products</th>
                 <th>Price</th>
-                <th>Stock</th>
+                <th>Stocks</th>
             </tr>
         </thead>
         <tbody>
@@ -114,7 +114,7 @@ if (isset($_POST['remove_product'])) {
                     echo '<div class="product-img"><img src="imgs/' . htmlspecialchars($row['image']) . '" alt=""></div>';
                     echo '<strong>' . htmlspecialchars($row['product_name']) . '</strong></div></td>';
                     echo '<td>$' . number_format($row['price'], 2) . '</td>';
-                    echo '<td>' . htmlspecialchars($row['stock']) . '</td>';
+                    echo '<td>' . htmlspecialchars($row['stocks']) . '</td>';
                     echo '</tr>';
                 }
             } else {
